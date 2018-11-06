@@ -15,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/JISHAX/reservation-proxy/issues"
   },
-  "homepage": "https://github.com/JISHAX/reservation-proxy#readme"
+  "homepage": "https://github.com/JISHAX/reservation-proxy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
