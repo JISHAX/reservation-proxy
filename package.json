@@ -1,0 +1,19 @@
+{
+  "name": "reservation-proxy",
+  "version": "1.0.0",
+  "description": "proxy server for reservation module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JISHAX/reservation-proxy.git"
+  },
+  "author": "jawad04",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JISHAX/reservation-proxy/issues"
+  },
+  "homepage": "https://github.com/JISHAX/reservation-proxy#readme"
+}
