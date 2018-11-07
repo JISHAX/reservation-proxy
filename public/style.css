@@ -1,0 +1,239 @@
+body {
+  font-family: BrandonText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  height: 5000px;
+}
+.MotherContainer {
+  min-height: 100%;
+  display: block;
+  position: relative;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(-1 * 48px);
+}
+aside {
+  width: 320px;
+  margin: 5rem 0 0 1rem;
+  display: block;
+  font-family: BrandonText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  -webkit-box-direction: reverse;
+  -webkit-font-smoothing: antialiased;
+}
+.mainarticle {
+  width: 700px;
+  margin: 5rem 1rem 0 0;
+  display: block;
+}
+/* .entryContainer {
+  width: 100%;
+  display: block;
+  white-space: normal;
+  padding-bottom: 15px;
+}
+.title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 16px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.price {
+  float: right;
+}
+.description {
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 14px;
+}
+.OtherComponents {
+  height: 800px;
+}
+.containerbig {
+  display: block;
+  position: relative;
+  height: auto;
+}
+#menuNav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #d8d9db;
+  border-top: 1px solid #d8d9db;
+}
+.container {
+  width: 100%;
+  padding-top: 50px;
+  height: auto;
+  display: flex;
+}
+.leftContainer {
+  height: auto;
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  padding-right: 40px;
+  text-align: left;
+}
+.rightContainer {
+  height: auto;
+  width: 50%;
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  text-align: left;
+}
+.container-1 {
+  height: 350px;
+  position: inherit;
+  overflow: hidden;
+}
+.container-2 {
+  position: relative;
+  height: inherit;
+}
+#blocker {
+  content: " ";
+  width: 100%;
+  height: 200px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fff),
+    to(rgba(255, 255, 255, 0))
+  );
+  background-image: linear-gradient(0deg, #fff, rgba(255, 255, 255, 0));
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#nonblocker {
+  content: " ";
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.greyline {
+  border-bottom: 1px solid #d8d9db;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+#viewFull:hover {
+  cursor: pointer;
+}
+
+#viewFull {
+  border: 1px solid #d8d9db;
+  background: none;
+  box-sizing: border-box;
+  font-weight: 500;
+  padding: 16px;
+  font-size: 16px;
+  width: 18rem;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+#viewFull2 {
+  border: 1px solid #d8d9db;
+  background: white;
+  box-sizing: border-box;
+  font-weight: 500;
+  padding: 16px;
+  font-size: 16px;
+  width: 18rem;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 10;
+  bottom: 32px;
+  box-shadow: rgba(51, 51, 51, 0.2) 0px 2px 4px;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 900px) {
+  .MotherContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #menuNav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #d8d9db;
+    border-top: 1px solid #d8d9db;
+  }
+}
+@media screen and (max-width: 600px) {
+  .leftContainer {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  .rightContainer {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  #menuNav {
+    display: block;
+    width: 75%;
+    border-bottom: 1px solid #d8d9db;
+    border-top: 1px solid #d8d9db;
+  }
+}
+@media screen and (max-width: 300px) {
+  .leftContainer {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    display: block;
+    text-align: left;
+  }
+  .rightContainer {
+    height: 100%;
+    width: 10%;
+    position: relative;
+    display: block;
+    text-align: left;
+  }
+} */
+
+/* background-color: #f1f2f4; grey color */
