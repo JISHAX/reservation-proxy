@@ -54,7 +54,7 @@ app.get("/restaurants/:id/overview/", function(req, res) {
 
 app.use(
   "/restaurants/:restaurantID/reservations",
-  proxy({ target: "http://127.0.0.1:3003/", changeOrigin: true })
+  proxy({ target: "http://ec2-3-16-136-151.us-east-2.compute.amazonaws.com/", changeOrigin: true })
 );
 app.get("/restaurants/:restaurantID/reservations", function(req, res) {
   const reservations = path.join(__dirname, "./public/index.html");
